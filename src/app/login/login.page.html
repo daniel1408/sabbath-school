@@ -1,28 +1,38 @@
 <ion-content>
-    <div class="limiter">
-      <div class="container-login100" style="background-image: url('https://i.pinimg.com/originals/2e/2e/a1/2e2ea1e1417c65bd73cc6306346f5209.jpg');">
-        <div class="wrap-login100 p-t-30 p-b-50">
-          <form class="login100-form validate-form p-b-33 p-t-5">
-  
-            <div class="wrap-input100 validate-input" data-validate="Enter username">
-              <ion-icon size="large" slot="start" name="person"></ion-icon>
-              <input class="input100" type="text" name="username" placeholder="Usuário">
-              <span class="focus-input100"></span>
-            </div>
-  
-            <div class="wrap-input100 validate-input" data-validate="Enter password">
-              <ion-icon size="large" slot="start" name="lock"></ion-icon>
-              <input class="input100" type="password" name="pass" placeholder="Senha">
-              <span class="focus-input100"></span>
-            </div>
-            
-            <div class="container-login100-form-btn m-t-32">
-              <button class="login100-form-btn" (click)="navigate()">
-                Entrar
-              </button>
-            </div>
-          </form>
-        </div>
+  <div class="limiter">
+    <div class="container-login100" style="background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDQ0NDQ0PDg0NDQ0NDQ0NDg8NDw0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtOjcBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIASsAqAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIDBQQH/8QALBABAAEDAwIFAwQDAAAAAAAAAAECEVEDE2ESkSExQaHwcYGxBCJSYhSC4f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9sAAFQAABUAUQBRAFEAVAAAAAAAAAAAAAAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARQBFABAUEBQQFBAUAARQRUAUQAVFBAAAAAAAAAAFQAAAAAAAAAAAEAUEBQAAAAAAAAABAFEUAQBRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEVAFAAAAAAAAAAAAAAAABAVJAAAFEAUQBRABUAUQAVAFBAFQAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAW6AAAC3EAFQAAAAAABBFABAUAAAAAAQBS4AAgKCAogCiAFxkBoZW4KMgNXGQGi7IDQyA0MgNDIDVxkBoZAaRAEuPJjXqzJvzmQetceVvTmV3asg9S5d5U6lWU3asz+Aetcu8mdWrMs7tefwD2Ll3kxq1cm5UD1rl3k70pOvIPXuXeRvzz3N+eQevcu8iNWcyu7OQetcu8idWeU355B7Fy7yN6c/knUqyD17jx51JzKg5fdJ+rt/qzNM/xBymZxdmaqsR2/663/qvXwDjFdfrTHeYOuf4/l23G4kHCK5xHu3Gpw6dLNVGPyCdfCTqf1mfusUStpBnezE9mZ1IxNnTpzZnojgGKNSnlq8crtU595XwgEi3LXRzKbsRnssasc9gKqI59nPajM93XdjE9l64+n1gHLbjyvPc6Jj1n3l0vGT56g5REz6z7wOtgFpmfWx94crrNX0B08OCJhz62b8g7TVHyIYiunntBFspNPINdUc9iaozLN7JMxyDU6lOVjVhIpjlJp+WBZ1o5ZnV4X7MzbALGtHyF3YlIjhYoj+IEVU/IX9vKTpwm1yDpHTkmKXHaXb5B1tStqeXOmi3q1IL+1WLKD5Nz5Es1SxTpOkUQDnecpM1Yd9uMNdE8A+Sa6oap1KseD6JonEJ0A4b0xlP8mu/l7vpmmDogHD/ACavkJGtVLtaOCNOAcNyuPWVjX1MQ79GGopyDjT+prw7x+q4TphqIiAI/UNb3zxZ8PVbUAbqzqlqYwk9IJOtBvQnRTPkToxkGt2Rnb5UHDqjlJrjl06YwzFMYBjehqnVpzLVdEYc5jxB23Inku5xDUATE4SOYaALMzLrHklr+YJT9iZjLGpNvJiJv5g6bkG7x7uLOpIPo3YSrV+z5IlYkHada2Z7JvTLlUlwfTTVy6RVy+SJ8G4nwB9N+R8dFU38wH//2Q==');">
+
+      <div class="image-icon">
+        <img src="https://seeklogo.com/images/I/igreja-adventista-do-setimo-dia-circular-logo-35819A51FB-seeklogo.com.png" alt=""
+          width="120">
       </div>
+
+      <div class="wrap-login100">
+        <form class="login100-form validate-form ">
+
+          <div class="wrap-input100 validate-input" data-validate="Enter username">
+            <ion-icon slot="start" name="person"></ion-icon>
+            <input class="input100" type="text" name="username" placeholder="Usuário">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Enter password">
+            <ion-icon slot="start" name="lock"></ion-icon>
+            <input class="input100" type="password" name="pass" placeholder="Senha">
+            <span class="focus-input100"></span>
+          </div>
+
+        </form>
+      </div>
+      <div class="container-login100-form-btn m-t-32">
+        <button class="login100-form-btn" (click)="navigate()">
+          Entrar
+        </button>
+      </div>
+      <div class="password-msg">
+        Esqueci minha senha
+      </div>
+      
     </div>
-  </ion-content>
+  </div>
+</ion-content>
