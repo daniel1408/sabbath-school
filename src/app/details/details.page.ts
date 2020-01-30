@@ -1,5 +1,5 @@
-import { ModalController } from '@ionic/angular';
-import { Component } from '@angular/core';
+import { ModalController, NavParams } from '@ionic/angular';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,9 +9,11 @@ import { Router } from '@angular/router';
 })
 export class DetailsPage {
 
+  @Input() user: string;
+
   constructor(
     private router: Router,
-    public modalCtrl: ModalController,
+    public modalCtrl: ModalController
   ) {}
 
   navigate() {
