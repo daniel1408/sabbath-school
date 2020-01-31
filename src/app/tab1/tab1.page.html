@@ -16,12 +16,15 @@
       <p>Se o seu dom é servir, sirva; se é ensinar, ensine. Romanos 12:7</p>
     </ion-card-content>
   </ion-card>
+
   <ion-list lines="none">
-    <ion-item (click)="presentModalBirthday()">
+    <ion-item (click)="presentModalBirthday()"
+      style="border: solid rgb(214, 214, 214) 1px; border-radius: 15px; margin: 10px;">
       <ion-icon slot="start" color="medium" name="calendar"></ion-icon>
       <ion-label>Próximos aniversários</ion-label>
     </ion-item>
-    <ion-item (click)="presentModalAppointments()">
+    <ion-item (click)="presentModalAppointments()"
+      style="border: solid rgb(214, 214, 214) 1px; border-radius: 15px; margin: 10px;">
       <ion-icon slot="start" color="medium" name="clipboard"></ion-icon>
       <ion-label>Apontamentos</ion-label>
     </ion-item>
