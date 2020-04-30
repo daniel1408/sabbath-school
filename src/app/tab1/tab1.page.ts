@@ -1,7 +1,9 @@
-import { BirthdayPage } from './../birthday/birthday.page';
 import { Component } from '@angular/core';
+
 import { ModalController } from '@ionic/angular';
+
 import { AppointmentsPage } from '../appointments/appointments.page';
+import { BirthdayPage } from './../birthday/birthday.page';
 
 @Component({
   selector: 'app-tab1',
@@ -26,5 +28,19 @@ export class Tab1Page {
     });
     return await modal.present();
   }
+
+
+  slides = [
+    {
+      title: "Welcome to the Docs!",
+      description: "The <b>Ionic Component Documentation</b> showcases a number of useful components that are included out of the box with Ionic.",
+      image: "assets/img/card-wireframe.png",
+    },
+    {
+      title: "What is Ionic?",
+      description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
+      image: "assets/img/card-wireframe.png",
+    }
+  ];
 
 }

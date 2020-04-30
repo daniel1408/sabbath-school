@@ -8,73 +8,16 @@
 </ion-header>
 
 <ion-content>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-item-group>
-
-    <ion-item (click)="presentModalDetails('Beatriz da Silva')">
-      <ion-avatar item-start>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
-      </ion-avatar>
-      <h5 style="margin-left: 10px">Beatriz da Silva</h5>
-    </ion-item>
-
-    <ion-item (click)="presentModalDetails('João da Silva')">
-      <ion-avatar item-start>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
-      </ion-avatar>
-      <h5 style="margin-left: 10px">João da Silva</h5>
-    </ion-item>
-
-
-    <ion-item (click)="presentModalDetails('Samuel da Silva')">
-      <ion-avatar item-start>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
-      </ion-avatar>
-      <h5 style="margin-left: 10px">Samuel da Silva</h5>
-    </ion-item>
-
-    <ion-item (click)="presentModalDetails('Isabela da Silva')">
-      <ion-avatar item-start>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
-      </ion-avatar>
-      <h5 style="margin-left: 10px">Isabela da Silva</h5>
-    </ion-item>
-
-    <ion-item (click)="presentModalDetails('Miguel da Silva')">
-      <ion-avatar item-start>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
-      </ion-avatar>
-      <h5 style="margin-left: 10px">Miguel da Silva</h5>
-    </ion-item>
-
-    <ion-item (click)="presentModalDetails('Sofia da Silva')">
-      <ion-avatar item-start>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
-      </ion-avatar>
-      <h5 style="margin-left: 10px">Sofia da Silva</h5>
-    </ion-item>
-
-    <ion-item (click)="presentModalDetails('Hibrain da Silva')">
-      <ion-avatar item-start>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
-      </ion-avatar>
-      <h5 style="margin-left: 10px">Hibrain da Silva</h5>
-    </ion-item>
-
-    <ion-item (click)="presentModalDetails('Amanda da Silva')">
-      <ion-avatar item-start>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
-      </ion-avatar>
-      <h5 style="margin-left: 10px">Amanda da Silva</h5>
-    </ion-item>
-
+    <ion-list>
+      <ion-item *ngFor="let item of items" (click)="presentModalDetails(item)">
+        <ion-avatar item-start>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevGeBfAuyYO9T2W43-VEdhUq9ixayuD6Eajw_-6BCIbW39LgB">
+        </ion-avatar>
+        <span style="margin-left: 10px">{{item}}</span>
+      </ion-item>
+    </ion-list>
   </ion-item-group>
-
 </ion-content>
